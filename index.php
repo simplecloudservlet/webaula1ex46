@@ -1,5 +1,3 @@
-<!-- Observacoes para o SQLite -->
-<!-- Antes de alterar qualquer tabela, executar a SQL: "PRAGMA foreign_keys = ON;" -->
 
 <!-- TODO1: PHP: Execute um script que conecte com um banco de dados suportado no servidor -->
 <!-- TODO2: PHP: Execute um script que crie uma tabela 'produtos' com os seguintes campos: id, nome-->
@@ -160,8 +158,6 @@ if($res){
 <?php
 echo "<h3>TODO5</h3><br>";
 
-//Apenas para o SQLite. Antes de qualquer modificacao nas tuplas:
-$db->query("PRAGMA foreign_keys = ON;");	
 
 $res = $db->query("INSERT INTO fornecedor VALUES ( 1, 'UTFPR1')");
 
